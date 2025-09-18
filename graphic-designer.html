@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammed Rizwan- Graphic Designer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-900 text-gray-200">
+
+    <header id="main-header" class="header">
+        <div class="flex justify-between items-center p-6 md:p-12">
+            <h1 class="text-3xl font-bold tracking-wider"style="color:#900b1a;">Mohammed Rizwan A</h1>
+            <div class="flex items-center space-x-6">
+                <a href="index.html" class="hidden sm:inline-block bg-gray-700 text-white font-semibold py-2 px-4 rounded-full hover:bg-gray-600 transition-colors">&larr; Back to Roles</a>
+            </div>
+        </div>
+    </header>
+
+    <div id="main-portfolio" class="min-h-screen pt-24">
+        <div class="p-6 md:p-12">
+            <div class="relative h-[400px] bg-black rounded-lg overflow-hidden">
+  <!-- Gradient overlay -->
+  <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent"></div>
+
+  <!-- Text content -->
+  <div class="relative z-10 p-6 md:p-12 lg:p-16 flex flex-col justify-end h-full">
+    <h2 id="hero-title" class="text-3xl md:text-5xl font-bold text-white mb-2">
+      Visual Storytelling Through Design
+    </h2>
+    <p id="hero-description" class="text-sm md:text-lg text-gray-300 max-w-2xl">
+      Creating compelling brand identities and digital assets that captivate audiences 
+      and communicate powerful messages.
+    </p>
+  </div>
+</div>
+
+            
+            <div id="project-rows" class="space-y-12">
+                <div>
+                    <h3 class="text-xl sm:text-2xl font-bold mb-4 text-teal-400">Brand & Logo Design</h3>
+                    <div class="project-card-row flex gap-4 overflow-x-auto pb-4">
+                        <div class="project-card bg-gray-800 rounded-xl overflow-hidden shadow-lg" data-title="Coffee Shop Branding" data-image="https://placehold.co/350x200/15803d/ffffff?text=Coffee+Shop" data-description="A full branding project for a local coffee shop, including logo variations, color palettes, and typography guidelines." data-tech="Adobe Illustrator, Photoshop">
+                            <img src="https://placehold.co/350x200/15803d/ffffff?text=Coffee+Shop" alt="Coffee Shop Branding" class="w-full h-32 md:h-48 object-cover">
+                            <div class="p-4">
+                                <h4 class="text-lg font-semibold truncate text-white">Coffee Shop Branding</h4>
+                                <p class="text-xs text-gray-400 mt-1">Adobe Illustrator, Photoshop</p>
+                            </div>
+                        </div>
+                        <div class="project-card bg-gray-800 rounded-xl overflow-hidden shadow-lg" data-title="Non-Profit Rebrand" data-image="https://placehold.co/350x200/15803d/ffffff?text=Non-Profit" data-description="A modern rebrand for a non-profit organization, creating a more professional and trustworthy visual identity." data-tech="Adobe InDesign, Illustrator">
+                            <img src="https://placehold.co/350x200/15803d/ffffff?text=Non-Profit" alt="Non-Profit Rebrand" class="w-full h-32 md:h-48 object-cover">
+                            <div class="p-4">
+                                <h4 class="text-lg font-semibold truncate text-white">Non-Profit Rebrand</h4>
+                                <p class="text-xs text-gray-400 mt-1">Adobe InDesign, Illustrator</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl sm:text-2xl font-bold mb-4 text-teal-400">Print & Digital Media</h3>
+                    <div class="project-card-row flex gap-4 overflow-x-auto pb-4">
+                        <div class="project-card bg-gray-800 rounded-xl overflow-hidden shadow-lg" data-title="Festival Poster Series" data-image="https://placehold.co/350x200/15803d/ffffff?text=Poster+Series" data-description="A set of vibrant posters for a music festival, designed for both print and digital advertising campaigns." data-tech="Adobe Photoshop, Illustrator">
+                            <img src="https://placehold.co/350x200/15803d/ffffff?text=Poster+Series" alt="Festival Poster Series" class="w-full h-32 md:h-48 object-cover">
+                            <div class="p-4">
+                                <h4 class="text-lg font-semibold truncate text-white">Festival Poster Series</h4>
+                                <p class="text-xs text-gray-400 mt-1">Adobe Photoshop, Illustrator</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <a href="index.html" class="bg-gray-700 text-white font-bold py-2 px-6 rounded-full hover:bg-gray-600 transition-colors">&larr; Back to Roles</a>
+            </div>
+        </div>
+    </div>
+    
+    <div id="project-modal" class="modal">
+        <div class="modal-content text-gray-300">
+            <span class="close-button">&times;</span>
+            <div class="flex flex-col md:flex-row gap-6">
+                <img id="modal-image" src="" alt="Project Image" class="w-full md:w-1/2 rounded-lg object-cover">
+                <div class="md:w-1/2">
+                    <h2 id="modal-title" class="text-3xl font-bold mb-4 text-white"></h2>
+                    <p id="modal-description" class="text-lg mb-4"></p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span id="modal-tech-stack" class="text-sm font-semibold text-gray-400"></span>
+                    </div>
+                    <a id="modal-link" href="#" target="_blank" class="inline-block bg-teal-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-teal-700 transition-colors">
+                        View Live Project
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
